@@ -14,7 +14,7 @@ public class JpaMain {
         tx.begin();
 
         try{
-            Member member = new Member(1L, "A", 32, RoleType.USER, new Date(), new Date(), "...");
+            Member member = new Member(1L, "A", 32, RoleType.USER, new Date(), new Date(), ".");
             em.persist(member);
             tx.commit();
         } catch (Exception e){
